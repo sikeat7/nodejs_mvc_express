@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     return 'Hello Express JS';
 });
 
-app.get('/users', Ctrlrs('UserController@user_list'));
+app.get('/users', require('./app/Controllers/UserController@list'));
 
 // Start the server
 app.listen(process.env.PORT, () => {
