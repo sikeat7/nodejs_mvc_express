@@ -20,5 +20,7 @@ module.exports = {
             dialect: 'sqlite',
             storage: 'database/sqlite/sqlite.sqlite'
         }
-    }
+    },
+
+    JWT_SECRET: process.env.JWT_SECRET
 }
