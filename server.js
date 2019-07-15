@@ -40,13 +40,9 @@ app.use(
   })
 );
 
-<<<<<<< HEAD
 // Routes
 const webRoute = require('./routes/web');
 app.use(webRoute);
-=======
-app.get('/users', require('./app/Controllers/UserController@list'));
->>>>>>> 702cf0bd7be3d9fb0b6a83d6c798a3cd426558de
 
 // Start the server
 app.listen(process.env.PORT, (err) => {
